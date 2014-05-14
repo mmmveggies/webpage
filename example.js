@@ -1,7 +1,4 @@
-var http = require('http'),
-    express = require('express'); // npm install express
-
-var app = new express();
+var app = new require('express')(); // npm install express
 
 app.get("/", function(req, res) {
     res.send("<a href='/fuck'>Noobs</a>");
