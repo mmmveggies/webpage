@@ -1,0 +1,23 @@
+{
+    "name": "sugaloaf",
+
+    "description": "Stuff that may foo or may not bar baz",
+
+    "version": "0.0.1",
+    
+    "man": "./README.md", 
+
+    "dependencies": {
+        "express": "4.2.x"
+    },
+
+    "repository": {
+        "type": "git",
+        "url": "http://github.com/AlexTGerhards/webpage"
+    },
+
+    "repository": {
+        "type": "git",
+        "url": "http://github.com/mmmveggies/webpage"
+    }
+}
