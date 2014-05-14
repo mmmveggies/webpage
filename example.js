@@ -1,6 +1,18 @@
-var http = require('http');
-http.createServer(function (req, res) {
-  res.writeHead(200, {'Content-Type': 'text/plain'});
-  res.end('Hello World\n');
-}).listen(1337, '127.0.0.1');
-console.log('Server running at http://127.0.0.1:1337/');
+var http = require('http'),
+    express = require('express'); // npm install express
+
+var app = new express();
+
+app.get("/", function(req, res) {
+    res.send("<a href='/fuck'>Noobs</a>");
+    console.log( "connection from: " + req.ip );
+});
+
+app.get("/fuck", function(req, res) {
+    var now = new Date();
+    res.send( "You requested fuck at: " + now );
+    console.log( "fuck at: " + now );
+});
+
+app.listen(1337);
+
