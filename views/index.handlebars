@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="{{css}}" />
+
+</head>
+
+<body>
+
+    <h1>{{header}}</h1>
+
+    <hr />
+
+    <table class="data">
+        
+            <tr>
+            {{#thead}}
+        
+                <th>{{this}}</th>
+            
+            {{/thead}}
+            </tr>
+
+        {{#trows}} 
+
+            <tr>
+            {{#this}}
+            
+                <td>{{this}}</td>
+
+            {{/this}}
+            </tr>
+
+        {{/trows}}
+
+    </table>
+
+</body>

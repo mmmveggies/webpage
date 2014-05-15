@@ -8,7 +8,8 @@
     "man": "./README.md", 
 
     "dependencies": {
-        "express": "4.2.x"
+        "express": "*",
+        "express3-handlebars": "*"
     },
 
     "repository": {
